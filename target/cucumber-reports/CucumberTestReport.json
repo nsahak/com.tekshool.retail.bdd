@@ -1,0 +1,92 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6233827000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Initializer.beforeHooks(Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Execute all information from Actor Table",
+        "description": "",
+        "id": "database-sql-query-feature;execute-all-information-from-actor-table",
+        "after": [
+          {
+            "result": {
+              "duration": 1083173900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Initializer.afterHooks(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 224748600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User connects to PostgreSQL",
+            "match": {
+              "location": "SqlQueryStepDefinition.user_connects_to_PostgreSQL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 23103500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User sends \"select * from public.actor\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "select * from public.actor",
+                  "offset": 12
+                }
+              ],
+              "location": "SqlQueryStepDefinition.user_sends(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30404400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should get all infomration from that table",
+            "match": {
+              "location": "SqlQueryStepDefinition.user_should_get_all_infomration_from_that_table()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@sqlquery"
+          }
+        ]
+      }
+    ],
+    "name": "Database SQL query feature",
+    "description": "",
+    "id": "database-sql-query-feature",
+    "keyword": "Feature",
+    "uri": "Features/DataBaseFeature.feature"
+  }
+]
